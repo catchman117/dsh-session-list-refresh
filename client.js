@@ -28,13 +28,15 @@ window.__ModuleLoader__.load({
       none: 'Refreshed: no new sessions',
       failed: 'Refresh failed: {message}',
     };
+    // DSH ships one built-in Chinese locale ("zh"); it is Simplified Chinese,
+    // so this dictionary uses Mainland terminology throughout.
     const zh = {
-      aria: '重新整理會話列表',
-      label: '重新整理',
-      busy: '正在重新整理…',
-      added: '已重新整理：新增 {count} 筆會話',
-      none: '已重新整理：沒有新會話',
-      failed: '重新整理失敗：{message}',
+      aria: '刷新会话列表',
+      label: '刷新',
+      busy: '正在刷新…',
+      added: '已刷新：新增 {count} 个会话',
+      none: '已刷新：没有新会话',
+      failed: '刷新失败：{message}',
     };
 
     const CSS = [

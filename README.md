@@ -2,7 +2,7 @@
 
 A tiny DeepSeek Harness (DSH) client plugin that adds a **refresh** action to the sidebar foot. It re-pulls the session catalog so sessions created by another process — most notably DSH headless automation tasks — show up immediately, without reloading the page.
 
-[繁體中文](README.zh-TW.md)
+[简体中文](README.zh-CN.md) | [繁體中文](README.zh-TW.md)
 
 ---
 
@@ -55,7 +55,7 @@ Then restart the Web runtime if the button does not appear after a reload.
 Click the refresh icon at the bottom of the sidebar. The list is re-fetched in place:
 
 - sessions appear under their workspace group — or under **Ungrouped** when no workspace membership has been recorded for them;
-- the tooltip / accessible label follows the active locale (`en` / `zh`);
+- the tooltip / accessible label follows the active locale (`en` / `zh`; DSH's built-in Chinese locale is Simplified Chinese with Mainland terminology);
 - repeated clicks are cheap and idempotent (“no new sessions”).
 
 > Tip: if the sidebar footer is crowded, the compact 36×36 variant appears when the sidebar is collapsed to its rail.

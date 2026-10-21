@@ -1,5 +1,16 @@
 # Changelog
 
+## 1.1.0 — 2026-10-21
+
+- Localize the plugin's Chinese copy to **Simplified Chinese with Mainland terminology**:
+  `刷新会话列表` / `刷新` / `正在刷新…` / `已刷新：新增 N 个会话` /
+  `已刷新：没有新会话` / `刷新失败：…`.
+  DSH ships a single built-in Chinese locale (`zh`) and it is Simplified, so the
+  previous Traditional Chinese strings were inconsistent with the rest of the UI.
+- Update the plugin display metadata (`locale/zh.json`) to Simplified Chinese.
+- Add `README.zh-CN.md` (Simplified Chinese, Mainland terminology) and cross-link
+  the three READMEs.
+
 ## 1.0.0 — 2026-10-21
 
 - First public release.

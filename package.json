@@ -1,6 +1,6 @@
 {
   "name": "dsh-session-list-refresh",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "DSH sidebar refresh action that re-pulls the session catalog, so sessions created by other processes (for example headless automation tasks) appear without reloading the page.",
   "type": "module",
   "main": "index.js",
@@ -17,6 +17,7 @@
     "locale/*.json",
     "icon.svg",
     "README.md",
+    "README.zh-CN.md",
     "README.zh-TW.md",
     "LICENSE"
   ],

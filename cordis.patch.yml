@@ -1,0 +1,5 @@
+# Bundle patch: mount the refresh bundle's Host half. The visible UI lives in
+# client.js (dsh.client), which the Web runtime loads as a client module.
+- insert:
+    - id: session-list-refresh
+      name: 'dsh-session-list-refresh'

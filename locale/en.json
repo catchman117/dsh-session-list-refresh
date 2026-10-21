@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Session List Refresh",
+    "description": "Adds a sidebar-foot refresh action that re-pulls the session catalog, so sessions created by other processes (such as headless automation tasks) appear without reloading the page."
+  }
+}

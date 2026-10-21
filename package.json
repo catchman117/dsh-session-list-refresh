@@ -1,0 +1,59 @@
+{
+  "name": "dsh-session-list-refresh",
+  "version": "1.0.0",
+  "description": "DSH sidebar refresh action that re-pulls the session catalog, so sessions created by other processes (for example headless automation tasks) appear without reloading the page.",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "README.zh-TW.md",
+    "LICENSE"
+  ],
+  "icon": "./icon.svg",
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "deepseek",
+    "cordis",
+    "plugin",
+    "sidebar",
+    "session-list",
+    "refresh"
+  ],
+  "author": "catchman117",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/catchman117/dsh-session-list-refresh.git"
+  },
+  "homepage": "https://github.com/catchman117/dsh-session-list-refresh#readme",
+  "bugs": {
+    "url": "https://github.com/catchman117/dsh-session-list-refresh/issues"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-slots"
+      ]
+    }
+  }
+}
